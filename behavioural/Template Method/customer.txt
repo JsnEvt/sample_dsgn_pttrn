@@ -1,0 +1,8 @@
+//Criando um problema para usar o Template Method
+//A ideia e remover coletar os dados do cpf no arquivo json e remover os caracteres como . e -
+//do cpf
+
+Jason Everton   45  123.456.789-11
+Carmem Miranda  30  789.456.123-66
+Severino    80  741.852.963-77
+Maria   66  852.741.987-55

@@ -1,0 +1,21 @@
+[{
+        "name": "Jason Everton",
+        "age": "45",
+        "cpf": "123.456.789-11"
+    },
+    {
+        "name": "Carmem Miranda",
+        "age": "30",
+        "cpf": "789.456.123-66"
+    },
+    {
+        "name": "Severino",
+        "age": "80",
+        "cpf": "741.852.963-77"
+    },
+    {
+        "name": "Maria",
+        "age": "66",
+        "cpf": "852.741.987-55"
+    }
+]
