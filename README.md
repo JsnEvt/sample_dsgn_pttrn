@@ -85,5 +85,61 @@ O curso aborda uma variedade de padrões de projeto que são essenciais para des
    - **Exemplo de Uso:** : Construção de um objeto House com diferentes partes (como quartos, banheiros, cozinha) onde a variação nos detalhes de cada parte pode resultar em diferentes tipos de casas (casa de campo, casa moderna, etc.).   
 O padrão Builder é especialmente útil para a construção de objetos que requerem várias etapas de inicialização ou configuração, tornando o código mais legível e gerenciável.
 
+10.  **Abstract Factory**
+   - **Propósito:** Fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+   - **Características:**
+     - Define uma interface (ou classe abstrata) para a criação de objetos de diferentes tipos.
+     - Implementações concretas da fábrica produzem variações de objetos que pertencem à mesma família.
+     - Facilita a troca de famílias de produtos sem alterar o código que usa os produtos.
+     - Promove a consistência entre objetos de uma família, garantindo que eles funcionem bem juntos.
+   - **Exemplo de Uso:** : Um sistema de interface gráfica que pode usar diferentes temas (Windows, macOS, Linux) onde cada tema tem suas próprias implementações de botões, caixas de texto e outros componentes de interface.  
+O padrão Abstract Factory é útil quando o sistema deve ser independente da forma como seus produtos são criados e compostos, e quando o sistema deve ser configurado com uma das várias famílias de produtos.
+
+11. **Prototype**
+   - **Propósito:** Permite criar novos objetos clonando uma instância existente, conhecida como protótipo.
+   - **Características:**
+     - Define uma interface para clonar objetos.
+     - Útil para a criação de objetos complexos ou caros em termos de desempenho e recursos.
+     - Permite a cópia de objetos sem depender de suas classes concretas, garantindo flexibilidade e independência de implementação.
+   - **Exemplo de Uso:** Um editor gráfico que permite copiar e colar elementos gráficos complexos, mantendo todas as propriedades e estados do objeto original.
+   O padrão Prototype é útil quando a instânciação direta de objetos é cara ou complexa, e quando se deseja criar novos objetos configurados a partir de um conjunto padrão de objetos.
 
 
+12. **Memento**
+   - **Propósito:** Captura e externaliza o estado interno de um objeto sem violar seu encapsulamento, permitindo que o objeto retorne a esse estado mais tarde.
+   - **Características:**
+     - Armazena o estado interno de um objeto em um objeto separado chamado memento.
+     - Preserva o encapsulamento, evitando que outros objetos acessem o estado interno diretamente.
+     - Útil para implementar operações de desfazer (undo) e refazer (redo).
+   - **Exemplo de Uso:** Um editor de texto que permite ao usuário desfazer e refazer alterações no documento.
+   O padrão Memento é útil quando você precisa salvar e restaurar o estado de um objeto sem comprometer sua encapsulação, facilitando a implementação de funcionalidades como desfazer e histórico de mudanças.
+
+
+13. **Mediator**
+   - **Propósito:** Define um objeto que encapsula a forma como um conjunto de objetos interage, promovendo o acoplamento fraco ao evitar que os objetos se refiram uns aos outros explicitamente.
+   - **Características:**
+     - Centraliza a comunicação entre objetos, evitando referências diretas entre eles.
+     - Reduz o número de conexões necessárias entre objetos, simplificando a interação e aumentando a modularidade.
+     - Facilita a manutenção e extensão do sistema, já que as interações são gerenciadas por um mediador central.
+   - **Exemplo de Uso:** Uma interface gráfica onde os componentes (botões, campos de texto, etc.) interagem através de um objeto mediador que gerencia as comunicações e coordena as ações.
+   O padrão Mediator é útil para reduzir a complexidade de comunicação em sistemas com muitos objetos interdependentes, promovendo um design mais organizado e de fácil manutenção.
+
+
+14. **Chain of Responsibility**
+   - **Propósito:** Permite que um pedido passe por uma cadeia de handlers (manipuladores) até que um deles processe o pedido, promovendo o desacoplamento entre o remetente e os receptores.
+   - **Características:**
+     - Cada handler na cadeia decide se processa o pedido ou o passa para o próximo handler.
+     - Facilita a adição e remoção de handlers na cadeia sem alterar o código que envia os pedidos.
+     - Promove a flexibilidade na atribuição de responsabilidades para o processamento de pedidos.
+   - **Exemplo de Uso:** Sistemas de suporte ao cliente onde diferentes níveis de suporte (primeiro nível, segundo nível, etc.) tratam os pedidos até que o problema seja resolvido.
+   O padrão Chain of Responsibility é útil quando você deseja passar pedidos através de uma série de objetos, permitindo que cada objeto tenha a chance de processar o pedido ou passá-lo adiante.
+
+
+15. **Adapter**
+   - **Propósito:** Permite que interfaces incompatíveis trabalhem juntas ao converter a interface de uma classe em outra interface que o cliente espera.
+   - **Características:**
+     - Atua como um intermediário entre duas interfaces incompatíveis.
+     - Encapsula a adaptação necessária para que as classes possam interagir sem modificar seu código original.
+     - Pode ser implementado através da composição (objeto adaptador) ou da herança (classe adaptadora).
+   - **Exemplo de Uso:** Um adaptador que permite que uma aplicação antiga utilize uma nova biblioteca de gráficos sem precisar ser reescrita.
+   O padrão Adapter é útil quando você precisa integrar classes com interfaces incompatíveis, permitindo que trabalhem juntas sem alterar seu código existente.
