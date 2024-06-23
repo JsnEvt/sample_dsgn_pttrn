@@ -143,3 +143,48 @@ O padrão Abstract Factory é útil quando o sistema deve ser independente da fo
      - Pode ser implementado através da composição (objeto adaptador) ou da herança (classe adaptadora).
    - **Exemplo de Uso:** Um adaptador que permite que uma aplicação antiga utilize uma nova biblioteca de gráficos sem precisar ser reescrita.
    O padrão Adapter é útil quando você precisa integrar classes com interfaces incompatíveis, permitindo que trabalhem juntas sem alterar seu código existente.
+
+
+
+16. **Bridge**
+   - **Propósito:** Desacopla uma abstração de sua implementação, permitindo que ambas variem independentemente.
+   - **Características:**
+     - Separa a abstração (interface) da implementação (concreta) em diferentes hierarquias de classes.
+     - Facilita a extensão e a manutenção de código ao permitir alterações independentes na abstração e na implementação.
+     - Usa composição ao invés de herança para conectar a abstração com a implementação.
+   - **Exemplo de Uso:** Um sistema de gerenciamento de dispositivos onde a interface de controle é separada da implementação específica de cada dispositivo (como impressoras, scanners, etc.), permitindo que novos dispositivos sejam adicionados facilmente.
+   O padrão Bridge é útil quando você precisa evitar uma explosão combinatória de subclasses ao combinar múltiplas dimensões de variação, promovendo uma separação clara entre abstração e implementação.
+
+
+17. **Composite**
+   - **Propósito:** : Permite tratar objetos individuais e composições de objetos de maneira uniforme, formando uma estrutura em árvore.
+   - **Características:**
+     - Define objetos primitivos e composições (objetos que contêm outros objetos) como sendo do mesmo tipo através de uma interface comum.
+     - Permite que clientes tratem objetos individuais e composições de objetos de maneira uniforme.
+     - Facilita a adição e a remoção dinâmica de objetos na estrutura em árvore.
+   - **Exemplo de Uso:** Uma estrutura de diretórios onde um diretório pode conter arquivos e subdiretórios, permitindo operações recursivas.
+   O padrão Composite é útil quando você precisa trabalhar com hierarquias de objetos que possam ser tratados de maneira uniforme, seja indivisível ou uma coleção de objetos.
+
+
+18. **Flyweight**
+   - **Propósito:** : Minimiza o uso de memória compartilhando o máximo possível de dados com objetos similares.
+   - **Características:**
+     - Divide os objetos em intrínsecos (compartilháveis) e extrínsecos (contextuais).
+     - Usa um objeto compartilhado para representar múltiplos objetos semelhantes.
+     - Reduz o uso de memória, especialmente útil quando muitos objetos similares precisam ser criados.
+   - **Exemplo de Uso:** Um editor de texto onde objetos Character representam caracteres individuais, e objetos Font representam a fonte aplicada a cada caractere. O padrão Flyweight permitiria que diferentes caracteres compartilhassem
+                          a mesma fonte para economizar memória.
+  O padrão Flyweight é útil quando você tem um grande número de objetos que compartilham dados semelhantes e podem ser eficientemente representados usando um conjunto limitado de objetos compartilhados.
+
+
+19. **Proxy**
+   - **Propósito:** : Fornece um substituto ou um espaço reservado para outro objeto controlar o acesso a ele.
+   - **Características:**
+     - Controla o acesso ao objeto real, permitindo adicionar funcionalidades adicionais, como verificação de acesso, cache, etc.
+     - Mantém a mesma interface que o objeto real, garantindo que o proxy possa ser usado em seu lugar.
+     - Pode ser usado para evitar a criação de objetos caros até que sejam realmente necessários.
+   - **Exemplo de Uso:** Um proxy de imagem que carrega a imagem real apenas quando ela é necessária, enquanto exibe uma imagem de espaço reservado antes disso.
+   O padrão Proxy é útil quando você deseja controlar ou adicionar funcionalidades adicionais ao acesso a um objeto sem modificar o código do objeto real.
+
+
+
